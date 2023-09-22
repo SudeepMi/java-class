@@ -16,14 +16,13 @@ public class Interface_p {
         s.setName();
         System.out.println(s.getName());
         
+        // Exception Handling
         try{
             int arr[] = {3,5,6};
              System.out.println(arr[10]);
             if(arr[0]==3){
                 throw new ArithmeticException("Hello from throw");
             }
-           
-            
         }catch(ArithmeticException e){
             System.out.println(e.getMessage());
         }catch(Exception e){
@@ -35,11 +34,12 @@ public class Interface_p {
 
 
 interface Student{
-   
     public String getName();
     public void setName();
 }
 
+
+// class implementing the Interface
 class NewStudent implements Student{
     public String name;
     public String getName(){

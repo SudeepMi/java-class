@@ -46,7 +46,21 @@ public class JMenuBarDemo {
          });
          
          
-      
+         String[][] data = {
+            { "Kundan Jha", "4031", "CSE" },
+            { "Anand Jha", "6014", "IT" }
+        };
+ 
+        // Column Names
+        String[] columnNames = { "Name", "Roll Number", "Department" };
+ 
+        // Initializing the JTable
+        JTable t = new JTable(data, columnNames);
+        
+ 
+        // adding it to JScrollPane
+        JScrollPane sp = new JScrollPane(t);
+        j.add(sp);
         j.setTitle("JMenu Demo");
         j.setSize(500,500);
         j.setLayout(null);
